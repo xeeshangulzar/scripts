@@ -1,5 +1,5 @@
 #Display index on rails console
-indexes =  ActiveRecord::Base.connection.indexes('mobile_network_recon_transactions');
+indexes =  ActiveRecord::Base.connection.indexes(table_name);
 indexes.map { |index| [index.name, index.columns] }
 # Sample index.last
 # <struct ActiveRecord::ConnectionAdapters::IndexDefinition
